@@ -1,0 +1,131 @@
+html, body {  
+    height: 100%; /* Full height for body */  
+    margin: 0; /* Remove default margin */  
+}  
+
+.navigation {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 10px 20px;  
+    background-color: #000000; 
+}  
+
+.inline-block {  
+    display: inline-block;  
+    vertical-align: top; /* Align items at the top */  
+}  
+
+.logo {  
+    width: 23%;
+    height: 20%;  
+    padding: 1%;  
+    text-align: center; /* Center the logo */  
+}  
+
+.logo-img {  
+    max-width: 50%; /* Ensure logo is responsive */  
+    height: auto;  
+}  
+
+nav {  
+    width: 73%;  
+    padding: 1%;  
+}  
+  
+nav ul {  
+    width: 50%;  
+    margin-left: auto; /* Center the ul */  
+    padding: 0;  
+}  
+
+nav ul li {  
+    font-family: Arial, Helvetica, sans-serif;
+    width: 10%;
+    text-align: center;
+    padding: 0 30px; /* Space between items */  
+    color: white; /* Text color for navbar items */  
+}  
+
+nav ul li:hover{
+    transition-duration: 0.2s;
+    border: 2px solid #80bbff;
+    border-radius: 8px;
+    cursor: pointer;
+
+  }
+
+
+.heroImg {  
+    height: 600px;  
+    padding: 25px;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+}  
+
+.content {  
+    font-family: Arial, Helvetica, sans-serif;
+    width: 500px;  
+    text-align: center; /* Center content text */  
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Semi-transparent background for content */  
+    padding: 20px;  
+    border-radius: 10px; /* Rounded corners */  
+}  
+
+.profile-img {  
+    max-width: 40%;  
+    height: auto;  
+    border-radius: 50%; /* Make the profile image circular */  
+}  
+
+footer {  
+    padding: 100px 0;  
+    text-align: center; /* Center footer content */ 
+}  
+
+footer ul {  
+    display: inline-block; /* Make footer UL inline-block */  
+    padding: 0;  
+}  
+
+footer ul li {  
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;  
+    display: inline-block; /* Inline items in footer */  
+    padding: 0 15px; /* Space between items */  
+    color: rgb(0, 0, 0); /* Text color for footer items */  
+}  
+
+
+button {  
+    background-color: #80bbff; /* Button color */  
+    color: white; /* Button text color */  
+    border: none;  
+    padding: 10px 20px;  
+    font-size: 16px;  
+    cursor: pointer; /* Pointer cursor on hover */  
+    border-radius: 5px; /* Rounded corners for button */  
+}  
+
+button:hover {  
+    background-color: #1c4ff7;  
+}  
+
+/* Responsive Styles */  
+@media (max-width: 768px) {  
+    .navigation {  
+        flex-direction: column; /* Stack navbar elements vertically on smaller screens */  
+    }  
+    .logo, nav {  
+        width: 100%; /* Make logo and nav take full width */  
+    }  
+    .heroImg {  
+        height: auto; /* Allow hero image section to adjust height */  
+        padding: 15px; /* Less padding on smaller screens */  
+    }  
+    .content {  
+        width: 90%; /* Make content section take more width on small screens */  
+    }  
+    
+}  

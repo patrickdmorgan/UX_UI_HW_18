@@ -3,19 +3,6 @@ html, body {
     box-sizing: border-box;
 }  
 
-.navigation {  
-    display: flex;  
-    justify-content: space-between;  
-    align-items: center;  
-    padding: 10px 20px;  
-    background-color: #000000; 
-}  
-
-.inline-block {  
-    display: inline-block;  
-    vertical-align: top; /* Align items at the top */  
-}  
-
 .logo {  
     width: 32%;
     height: 30%;  
@@ -28,32 +15,47 @@ html, body {
     height: auto;  
 }  
 
+.navigation {  
+    position: sticky;
+    top: 0;
+    overflow: hidden; 
+    background-color: #000000; 
+}  
+
+.inline-block {  
+    display: inline-block;  
+    vertical-align: top; /* Align items at the top */  
+}  
+
 nav {  
     width: 100%;  
-    padding: 3%;  
 }  
   
 nav ul {  
-    width: 50%;  
-    margin-left: auto; /* Center the ul */  
+    width: auto;  
+    float: right;
     padding: 0;  
 }  
 
 nav ul li {  
     font-family: Arial, Helvetica, sans-serif;
     width: auto;
-    text-align: center;
+    text-align: end;
     padding: 0 30px; /* Space between items */  
+    border: 1px;
+    border-width: auto;
+    border-radius: 8px;
     color: white; /* Text color for navbar items */  
 }  
 
 nav ul li:hover {
     transition-duration: 0.4s;
     border: 1px solid #80bbff;
+    width: auto;
     border-width: auto;
     border-radius: 8px;
     cursor: pointer;
-    padding: auto;
+    padding: 0 30px; /* Space between items */
 
   }
 

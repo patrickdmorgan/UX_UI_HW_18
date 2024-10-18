@@ -28,35 +28,46 @@ html, body {
 }  
 
 nav {  
-    width: 100%;  
+    width: 100%;
+    height:fit-content;  
 }  
   
 nav ul {  
-    width: auto;  
     float: right;
-    padding: 0;  
+    padding: 5px 10px; /* Space between items */  
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px none;  
+    border-radius: 6px;
+    color: white; /* Text color for navbar items */    
 }  
 
-nav ul li {  
+nav ul li {     
+    display: inline-block;  
     font-family: Arial, Helvetica, sans-serif;
-    width: auto;
-    text-align: end;
-    padding: 0 30px; /* Space between items */  
-    border: 1px;
-    border-width: auto;
-    border-radius: 8px;
+    padding: 5px 10px; /* Space between items */
+    border: 1px none;    
+    border-radius: 6px;
+    color: white; /* Text color for navbar items */  
+}  
+
+nav ul li a {  
+    text-decoration: none; /* Remove underline from links */  
+    display: inline-block;  
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 10px; /* Space between items */
+    border: 1px none;  
+    border-radius: 6px;
     color: white; /* Text color for navbar items */  
 }  
 
 nav ul li:hover {
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
     border: 1px solid #80bbff;
-    width: auto;
-    border-width: auto;
-    border-radius: 8px;
-    cursor: pointer;
-    padding: 0 30px; /* Space between items */
-
+    display: inline-block;  
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 10px; /* Space between items */  
+    border-radius: 6px;
+    color: white; /* Text color for navbar items */  
   }
 
 .heroImg {  
